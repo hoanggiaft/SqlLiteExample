@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
                     //calling the updateEmployee method of DatabaseHandler class to update record
                     val status = databaseHandler.updateEmployee(EmpModelClass(Integer.parseInt(updateId),updateName, updateEmail))
                     if(status > -1){
-                        Toast.makeText(applicationContext,"record update",Toast.LENGTH_LONG).show()
+                        Toast.makeText(applicationContext,"Record update",Toast.LENGTH_LONG).show()
                         displayEmployeesOnList()
                     }
                 }else{
